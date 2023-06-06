@@ -9,6 +9,10 @@ function Book(title, author,pages,readAlready){
   
 }
 
+Book.prototype.readBook = function(){
+  this.readAlready = 'yes'
+}
+
 const bookLibrary = document.querySelector('#booksLibrary')
 
 // Add book to array library, also give the proper index
@@ -64,7 +68,7 @@ function createDiv(book){
   
   readButton.addEventListener('click', ()=>{
     read.textContent = 'Read'
-    myLibrary[book.index].readAlready = 'yes'
+    myLibrary[book.index].readBook()
   })
 }
 
