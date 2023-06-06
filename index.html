@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome to my Library</h1>
+  <button id="showForm">Click here to add a book</button>
+  <div class="formBooks">
+    <form action="" class='hidden'>
+      <fieldset>
+        <legend>BOOK</legend>
+      
+      <input type="text" name='title' id='title' placeholder='Title'>
+      <input type="text" name='author' id='author' placeholder='Author'>
+      <input type="number" name='pages' id='pages' placeholder='Pages'>
+              
+      <label for="readBook">Read the book?</label>
+      <select name="readBook" id="readBook">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+        
+      <button type="button" id='addBook' class='buttons'>Add the book</button>
+      <div class="containerButton">
+      <button type="reset" id="clear" class='buttons'>Clear</button>      
+        </div>
+
+     </fieldset>
+    </form>
+  </div>
+ 
+  <div id="booksLibrary"></div>
+  <script src='main.js'></script>
+</body>
+</html>
