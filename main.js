@@ -73,7 +73,7 @@ const addBookButton = document.querySelector('#showForm')
 const form = document.querySelector('form')
 
 addBookButton.addEventListener('click', (e)=>{
-  form.classList.toggle('hidden')  
+  form.classList.toggle('delete')  
 })
 
 const addBookToLibraryButton = document.querySelector('#addBook')
